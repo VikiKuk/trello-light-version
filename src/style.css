@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0079BF;
+  margin: 0;
+  padding: 20px;
+}
+
+.board {
+  display: flex;
+  gap: 16px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #e2e4e6;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.column-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cards {
+  flex-grow: 1; 
+  min-height: 50px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 3px;
+  padding: 8px;
+  margin-bottom: 8px;
+  cursor: grab;
+  position: relative;
+}
+
+.card-remove {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.card:hover .card-remove {
+  display: inline; /* показывается при наведении */
+}
+
+body.dragging-cursor * {
+  cursor: grabbing !important;
+  cursor: -webkit-grabbing !important;
+  cursor: -moz-grabbing !important;
+}
+
+.add-link,
+.add-form {
+  margin-top: auto; /*линка прижимается к низу колонки */
+}
+
+.add-link {
+  display: inline-block;
+  color: #333;
+  cursor: pointer;
+  margin-top: 8px;
+  padding: 4px;
+}
+
+.add-link:hover {
+  text-decoration: underline;
+}
+
+.add-form {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.add-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 40px;
+  max-height: 120px;
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.form-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.form-actions button {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.add-btn {
+  background: #5aac44;
+  color: white;
+}
+
+.cancel-btn {
+  background: #ccc;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.placeholder {
+  border: 2px dashed #8c8c8c;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.dragging {
+  position: absolute;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.9;
+  cursor: grabbing;
+}
