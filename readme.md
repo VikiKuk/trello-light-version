@@ -1,12 +1,16 @@
 ![CI](https://github.com/VikiKuk/trello-light-version/actions/workflows/node.js.yml/badge.svg)
 
-Игра доступна по адресу:  
+Доска доступна по адресу:  
 👉 [GitHub Pages Demo](https://vikikuk.github.io/trello-light-version/)
 
 # 🔨 Trello (light version)
 
-Проект представляет собой упрощённую версию **Trello** — систему управления задачами в формате канбан-доски.  
-Цель — отработать навыки работы с DOM, Drag’n’Drop и LocalStorage.
+Проект представляет собой упрощённую версию **Trello** - систему управления задачами в формате канбан-доски.  
+Цель - отработать навыки работы с DOM, Drag’n’Drop и LocalStorage.
+
+Визуализация реализованного UI:
+
+![trello](public/trello.png)
 
 ---
 
@@ -50,6 +54,6 @@
 
 ## ⚙️ Технологии проекта
 
-- **Webpack** — сборка проекта  
-- **Webpack Dev Server** — локальная разработка  
+- **Webpack** - сборка проекта  
+- **Webpack Dev Server** - локальная разработка  
 
